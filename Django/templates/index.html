@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>templets is working</title>
+</head>
+<body>
+    <h1>Welcome Brothers !</h1>
+    <form action="/analyze" method="post"> {% csrf_token %}
+          <textarea name='text' cols="30" rows="10" style="width: 1504px; height: 183px;"></textarea>
+          <input type="checkbox" name="remove">remove puncuations<br>
+          <input type="checkbox" name="cap">Uppercase<br>
+          <input type="checkbox" name="new">New Line Remover<br>
+          <input type="checkbox" name="space">Remover Space<br>
+          <button type="submit"> Text Analize</button>
+
+    </form>
+</body>
+</html>
